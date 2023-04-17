@@ -43,19 +43,12 @@ export function Navbar() {
 		<header className='p-4 flex-[0.25] fixed top-0 z-50 w-screen'>
 			<nav
 				className={`${
-					navbar ? 'max-h-screen' : 'max-h-14'
-				} bg-dark-600/50 p-4 rounded-md max-w-5xl mx-auto backdrop-blur-lg transition-all duration-500 ease-in-out overflow-hidden`}
+					navbar ? 'max-h-screen' : 'max-h-16'
+				} bg-dark-600/50 p-5 rounded-md max-w-5xl mx-auto backdrop-blur-lg transition-all duration-500 ease-in-out`}
 			>
 				<div className='flex flex-row justify-between'>
 					<div className='flex flex-row gap-x-2'>
-						<Link href='/'>
-							<Image
-							src={companyData.logos.logomark}
-							alt='Beneath the Bark Logo'
-							width={100}
-							height={100}
-							></Image>
-						</Link>
+						logo
 					</div>
 					<div className='md:hidden text-light text-2xl'>
 						<button onClick={() => setNavbar(!navbar)}>
@@ -69,7 +62,7 @@ export function Navbar() {
 					</div>
 				</div>
 				{navbar ? (
-					<div className='md:hidden flex flex-col'>
+					<div className='md:hidden flex flex-col pt-4'>
 						{navList}
 						<div className='flex flex-col justify-between gap-4 items-stretch text-center w-1/3 text-4xl m-auto'>
 							{socialIcons}
