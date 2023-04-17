@@ -8,30 +8,30 @@ export function Navbar() {
 	const [navbar, setNavbar] = useState(false);
 
 	const navList = (
-		<ul className='flex flex-col md:flex-row text-light font-semibold gap-5'>
-			<li>
+		<ul className='flex flex-col md:flex-row text-light gap-5'>
+			<li className='text-lg hover:opacity-80'>
 				<Link href='/' className='p-2'>Home</Link>
 			</li>
-			<li>
+			<li className='text-lg hover:opacity-80'>
 				<Link href='/about' className='p-2'>About Us</Link>
 			</li>
-            <li>
+            <li className='text-lg hover:opacity-80'>
 				<Link href='/products' className='p-2'>Products</Link>
 			</li>
-			<li>
+			<li className='text-lg hover:opacity-80'>
 				<Link href='/contact' className='p-2'>Contact Us</Link>
 			</li>
 		</ul>
 	);
 
 	const socialIcons = (
-		<ul className='flex flex-row justify-center gap-2 text-light'>
-			<li>
+		<ul className='flex flex-row justify-center gap-3 text-light'>
+			<li className='text-3xl hover:opacity-80'>
 				<Link href={companyData.socialMedia.instagram} target='__blank'>
 					<InstagramLogo weight='fill' />
 				</Link>
 			</li>
-			<li>
+			<li className='text-3xl hover:opacity-80'>
 				<Link href={companyData.socialMedia.tikTok} target='__blank'>
 					<TiktokLogo weight='fill' />
 				</Link>
@@ -44,10 +44,10 @@ export function Navbar() {
 			<nav
 				className={`${
 					navbar ? 'max-h-screen' : 'max-h-16'
-				} bg-dark-600/50 p-5 rounded-md max-w-5xl mx-auto backdrop-blur-lg transition-all duration-500 ease-in-out`}
+				} bg-dark-600/60 p-5 rounded-md max-w-5xl mx-auto backdrop-blur-sm transition-all duration-500 ease-in-out`}
 			>
 				<div className='flex flex-row justify-between'>
-					<div className='flex flex-row gap-x-2'>
+					<div className='flex flex-row text-light gap-x-2'>
 						logo
 					</div>
 					<div className='md:hidden text-light text-2xl'>
