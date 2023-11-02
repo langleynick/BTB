@@ -8,7 +8,7 @@ export function Navbar() {
 	const [navbar, setNavbar] = useState(false);
 
 	const navList = (
-		<ul className='flex flex-col md:flex-row text-light gap-5'>
+		<ul className='flex flex-col md:flex-row text-light font-semibold gap-5'>
 			<li className='text-lg hover:opacity-80'>
 				<Link href='/' className='p-2'>Home</Link>
 			</li>
@@ -16,7 +16,7 @@ export function Navbar() {
 				<Link href='/about' className='p-2'>About Us</Link>
 			</li>
             <li className='text-lg hover:opacity-80'>
-				<Link href='/products' className='p-2'>Products</Link>
+				<Link href='/ourwork' className='p-2'>Our Work</Link>
 			</li>
 			<li className='text-lg hover:opacity-80'>
 				<Link href='/contact' className='p-2'>Contact Us</Link>

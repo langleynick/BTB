@@ -4,7 +4,7 @@ export default function Contact() {
     return (
         <>
             <Layout
-                title="About - BTB"
+                title="About Us - BTB"
                 description="About Us"
                 >
                 

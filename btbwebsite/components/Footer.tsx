@@ -19,7 +19,7 @@ export function Footer() {
 							></Image>
 						</Link>
 						<span className='text-sm text-light'>
-							&copy; 2023, All Rights Reserved.
+							&copy; 2023 All Rights Reserved.
 						</span>
 					</div>
 					<div className='grid grid-cols-2'>
@@ -32,7 +32,7 @@ export function Footer() {
                                     <Link href='/about'>About Us</Link>
                                 </li>
                                 <li className='hover:opacity-80'>
-                                    <Link href='/products'>Products</Link>
+                                    <Link href='/ourwork'>Our Work</Link>
                                 </li>
                                 <li className='hover:opacity-80'>
                                     <Link href='/contact'>Contact Us</Link>

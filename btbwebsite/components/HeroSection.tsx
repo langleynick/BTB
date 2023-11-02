@@ -28,8 +28,8 @@ export function HeroSection() {
 					<Button variant='primary-base' href='/contact'>
 						Contact Us
 					</Button>
-					<Button variant='secondary-sm' href='/products'>
-						Our Products
+					<Button variant='secondary-sm' href='/ourwork'>
+						Our Work
 					</Button>
 				</div>
 			</div>
